@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2024-07-12",
+    "type": "rest",
+    "warmup": {
+      "title": "Warm Up",
+      "description": "Rest day - light walk recommended"
+    },
+    "preWorkout": {
+      "title": "Pre Workout",
+      "description": "-"
+    },
+    "mainWorkout": {
+      "title": "Main Workout",
+      "description": "-"
+    },
+    "cooldown": {
+      "title": "Cooldown",
+      "description": "Gentle stretching"
+    },
+    "notes": "Recovery is important!"
+  },
+  {
+    "date": "2024-07-13",
+    "type": "workout",
+    "warmup": {
+      "title": "Warm Up",
+      "description": "Row 1000m, dynamic stretching",
+      "duration": 12
+    },
+    "preWorkout": {
+      "title": "Pre Workout",
+      "description": "Shoulder mobility, band pull-aparts",
+      "duration": 8
+    },
+    "mainWorkout": {
+      "title": "Main Workout",
+      "description": "AMRAP 20 min: 5 pull-ups, 10 push-ups, 15 air squats",
+      "duration": 20
+    },
+    "cooldown": {
+      "title": "Cooldown",
+      "description": "Stretching, deep breathing",
+      "duration": 10
+    },
+    "notes": "Pace yourself for the AMRAP."
+  },
+  {
+    "date": "2024-07-14",
+    "type": "workout",
+    "warmup": {
+      "title": "Warm Up",
+      "description": "Dynamic stretching, 1,000m row",
+      "duration": 10
+    },
+    "preWorkout": {
+      "title": "Pre Workout",
+      "description": "Complete as many meters as possible in 10 minutes of: Farmers carry",
+      "duration": 10
+    },
+    "mainWorkout": {
+      "title": "Main Workout",
+      "description": "4 rounds for time: 10 push-ups, 15 squats, 20 sit-ups",
+      "duration": 30
+    },
+    "cooldown": {
+      "title": "Cooldown",
+      "description": "Foam rolling, static stretching",
+      "duration": 10
+    },
+    "notes": "Focus on form, not speed."
+  },
+  {
+    "date": "2025-07-15",
+    "type": "workout",
+    "warmup": {
+      "title": "Warm Up",
+      "description": "5 rounds of 20 seconds jump rope, 40 seconds active rest. Followed by dynamic stretching for whole body",
+      "duration": 15
+    },
+    "preWorkout": {
+      "title": "Pre Workout",
+      "description": "Kettlebell drills: 2 sets of 10 kettlebell swings, 10 kettlebell goblet squats",
+      "duration": 10
+    },
+    "mainWorkout": {
+      "title": "Main Workout",
+      "description": "5 Rounds for Time: 8 Kettlebell thrusters (each side), 15 kettlebell swings, 400m run",
+      "duration": 35
+    },
+    "cooldown": {
+      "title": "Cooldown",
+      "description": "10 minutes of yoga-inspired cool down stretches",
+      "duration": 10
+    },
+    "notes": "Hydrate well & focus on deep breathing during cooldown"
+  }
+]
