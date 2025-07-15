@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
   const prompt = `Given the following workout history, generate a new daily workout for today. Each day must include: a warm up, a pre workout, a main workout, and a cooldown session. 
 The program must be logic based on previous workouts and rest days, so today's workout should be influenced by the previous days. 
 However, do NOT follow a predictable pattern. Be creative and surprising—introduce new movements, formats, or challenges. Avoid repeating the same structure or exercises as previous days. 
-If a rest day is needed, make it a rest day. Workouts must be mostly inspired by crossfit workouts and exercises. 
+If a rest day is needed, make it a rest day.. Workouts must be mostly inspired by crossfit workouts and exercises. 
 Return the result as a JSON object matching this TypeScript type:\n\n${JSON.stringify({
     date: "2024-06-08",
     type: "workout",
