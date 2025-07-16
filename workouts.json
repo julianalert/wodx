@@ -94,5 +94,30 @@
       "duration": 10
     },
     "notes": "Hydrate well & focus on deep breathing during cooldown"
+  },
+  {
+    "date": "2025-07-16",
+    "type": "workout",
+    "warmup": {
+      "title": "Warm Up",
+      "description": "5 minutes of jump rope, followed by light jogging and dynamic stretching for lower body",
+      "duration": 15
+    },
+    "preWorkout": {
+      "title": "Pre Workout",
+      "description": "2 sets of walking lunges and mobility drills to prep for main workout",
+      "duration": 10
+    },
+    "mainWorkout": {
+      "title": "Main Workout",
+      "description": "EMOM (Every minute on the minute) for 20 min: 5 box jumps and 5 push presses. Use a weight that is challenging but manageable",
+      "duration": 20
+    },
+    "cooldown": {
+      "title": "Cooldown",
+      "description": "Slow walk for 5 min, followed by static stretching especially for legs and shoulders",
+      "duration": 15
+    },
+    "notes": "Ensure good form especially on push presses to prevent injury"
   }
 ]
