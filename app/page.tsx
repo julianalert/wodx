@@ -121,7 +121,7 @@ export default function Home() {
             onClick={handleGenerate}
             disabled={generating}
           >
-            {generating ? "Génération en cours..." : "Générer le WOD d&apos;aujourd&apos;hui"}
+            {generating ? "Génération en cours..." : "Générer le WOD du jour"}
           </button>
         )}
         {/* Add space between hero and cards */}
