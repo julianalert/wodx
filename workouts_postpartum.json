@@ -1,128 +1,152 @@
 [
-    {
-      "date": "2025-07-11",
-      "type": "entraînement",
-      "warmup": {
-        "title": "Échauffement",
-        "description": "5 minutes de marche douce ou de balancements contrôlés des bras et des jambes sur place",
-        "duration": 5
-      },
-      "preWorkout": {
-        "title": "Pré-entraînement",
-        "description": "Respiration diaphragmatique allongée, activation douce du plancher pelvien, rotations de chevilles et cercles de bras",
-        "duration": 5
-      },
-      "mainWorkout": {
-        "title": "Entraînement principal",
-        "description": "2 tours : 10 squats à amplitude réduite près d'une chaise, 10 élévations de bassin au sol, 10 bird-dogs alternés (contrôle du tronc)",
-        "duration": 12
-      },
-      "cooldown": {
-        "title": "Retour au calme",
-        "description": "Étirements doux : mollets, quadriceps, bras. Respiration lente et profonde en position allongée",
-        "duration": 5
-      },
-      "notes": "Bougez lentement, connectez-vous à votre respiration. Arrêtez si vous ressentez une pression abdominale."
+  {
+    "date": "2025-07-11",
+    "type": "entraînement",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "5 minutes de marche douce ou de balancements contrôlés des bras et des jambes sur place",
+      "duration": 5
     },
-    {
-      "date": "2025-07-12",
-      "type": "entraînement",
-      "warmup": {
-        "title": "Échauffement",
-        "description": "6 minutes de marche lente à modérée ou de pas de côté sur place",
-        "duration": 6
-      },
-      "preWorkout": {
-        "title": "Pré-entraînement",
-        "description": "Exercices de Kegel coordonnés à l’expiration, mobilisation douce des épaules et hanches",
-        "duration": 6
-      },
-      "mainWorkout": {
-        "title": "Entraînement principal",
-        "description": "3 tours : 8 step-ups bas sur une marche, 10 glute bridges avec bras étendus, 10 extensions de jambe couchée sur le côté",
-        "duration": 15
-      },
-      "cooldown": {
-        "title": "Retour au calme",
-        "description": "Étirements en position assise : dos, hanches, bras. Respiration guidée",
-        "duration": 6
-      },
-      "notes": "Respirez profondément pendant les mouvements. Pas de tension dans la sangle abdominale."
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Respiration diaphragmatique allongée, activation douce du plancher pelvien, rotations de chevilles et cercles de bras",
+      "duration": 5
     },
-    {
-      "date": "2025-07-13",
-      "type": "entraînement",
-      "warmup": {
-        "title": "Échauffement",
-        "description": "5 minutes de rotation douce du tronc assise, balancements des jambes et des bras",
-        "duration": 5
-      },
-      "preWorkout": {
-        "title": "Pré-entraînement",
-        "description": "Respiration abdominale + Kegel, étirements actifs doux des bras et jambes",
-        "duration": 5
-      },
-      "mainWorkout": {
-        "title": "Entraînement principal",
-        "description": "Circuit 3 tours : 10 demi-squats avec ballon entre les genoux, 10 bird-dogs lents avec pause de 2 sec, 10 élévations de talons debout (gainage postural)",
-        "duration": 14
-      },
-      "cooldown": {
-        "title": "Retour au calme",
-        "description": "Étirements doux au sol : bas du dos, nuque, jambes. Respiration lente",
-        "duration": 5
-      },
-      "notes": "Évitez de rentrer le ventre de façon forcée. Priorisez la stabilité et le confort."
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "2 tours : 10 squats à amplitude réduite près d'une chaise, 10 élévations de bassin au sol, 10 bird-dogs alternés (contrôle du tronc)",
+      "duration": 12
     },
-    {
-      "date": "2025-07-14",
-      "type": "entraînement",
-      "warmup": {
-        "title": "Échauffement",
-        "description": "5 minutes de pas de côté, montées de genoux légères (petite amplitude), mobilisation articulaire",
-        "duration": 5
-      },
-      "preWorkout": {
-        "title": "Pré-entraînement",
-        "description": "Respiration contrôlée, activation du plancher pelvien, étirements actifs des hanches",
-        "duration": 5
-      },
-      "mainWorkout": {
-        "title": "Entraînement principal",
-        "description": "2 tours : 8 squats lents avec appui mural, 10 fentes arrière statiques (avec support si besoin), 10 relevés de jambe latéraux au sol",
-        "duration": 15
-      },
-      "cooldown": {
-        "title": "Retour au calme",
-        "description": "Étirements du psoas, des ischios et des épaules. Respiration abdominale allongée",
-        "duration": 5
-      },
-      "notes": "Gardez le bassin stable durant chaque mouvement. Faites les exercices près d’un support si nécessaire."
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Étirements doux : mollets, quadriceps, bras. Respiration lente et profonde en position allongée",
+      "duration": 5
     },
-    {
-      "date": "2025-07-15",
-      "type": "entraînement",
-      "warmup": {
-        "title": "Échauffement",
-        "description": "6 minutes de marche ou mouvements dansés doux sur place pour faire monter légèrement le rythme cardiaque",
-        "duration": 6
-      },
-      "preWorkout": {
-        "title": "Pré-entraînement",
-        "description": "Mobilité du dos avec cat-cow, respiration diaphragmatique + engagement pelvien",
-        "duration": 5
-      },
-      "mainWorkout": {
-        "title": "Entraînement principal",
-        "description": "3 tours : 12 assis-debout sur chaise, 10 ponts fessiers, 10 'dead bugs' bras seuls (sans lever les jambes)",
-        "duration": 16
-      },
-      "cooldown": {
-        "title": "Retour au calme",
-        "description": "Respiration profonde, étirements en position allongée : dos, jambes, épaules",
-        "duration": 6
-      },
-      "notes": "Vous êtes sur la bonne voie. Évitez tout inconfort abdominal. Respirez avec fluidité."
-    }
-  ]
-  
+    "notes": "Bougez lentement, connectez-vous à votre respiration. Arrêtez si vous ressentez une pression abdominale."
+  },
+  {
+    "date": "2025-07-12",
+    "type": "entraînement",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "6 minutes de marche lente à modérée ou de pas de côté sur place",
+      "duration": 6
+    },
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Exercices de Kegel coordonnés à l’expiration, mobilisation douce des épaules et hanches",
+      "duration": 6
+    },
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "3 tours : 8 step-ups bas sur une marche, 10 glute bridges avec bras étendus, 10 extensions de jambe couchée sur le côté",
+      "duration": 15
+    },
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Étirements en position assise : dos, hanches, bras. Respiration guidée",
+      "duration": 6
+    },
+    "notes": "Respirez profondément pendant les mouvements. Pas de tension dans la sangle abdominale."
+  },
+  {
+    "date": "2025-07-13",
+    "type": "entraînement",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "5 minutes de rotation douce du tronc assise, balancements des jambes et des bras",
+      "duration": 5
+    },
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Respiration abdominale + Kegel, étirements actifs doux des bras et jambes",
+      "duration": 5
+    },
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "Circuit 3 tours : 10 demi-squats avec ballon entre les genoux, 10 bird-dogs lents avec pause de 2 sec, 10 élévations de talons debout (gainage postural)",
+      "duration": 14
+    },
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Étirements doux au sol : bas du dos, nuque, jambes. Respiration lente",
+      "duration": 5
+    },
+    "notes": "Évitez de rentrer le ventre de façon forcée. Priorisez la stabilité et le confort."
+  },
+  {
+    "date": "2025-07-14",
+    "type": "entraînement",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "5 minutes de pas de côté, montées de genoux légères (petite amplitude), mobilisation articulaire",
+      "duration": 5
+    },
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Respiration contrôlée, activation du plancher pelvien, étirements actifs des hanches",
+      "duration": 5
+    },
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "2 tours : 8 squats lents avec appui mural, 10 fentes arrière statiques (avec support si besoin), 10 relevés de jambe latéraux au sol",
+      "duration": 15
+    },
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Étirements du psoas, des ischios et des épaules. Respiration abdominale allongée",
+      "duration": 5
+    },
+    "notes": "Gardez le bassin stable durant chaque mouvement. Faites les exercices près d’un support si nécessaire."
+  },
+  {
+    "date": "2025-07-15",
+    "type": "entraînement",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "6 minutes de marche ou mouvements dansés doux sur place pour faire monter légèrement le rythme cardiaque",
+      "duration": 6
+    },
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Mobilité du dos avec cat-cow, respiration diaphragmatique + engagement pelvien",
+      "duration": 5
+    },
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "3 tours : 12 assis-debout sur chaise, 10 ponts fessiers, 10 'dead bugs' bras seuls (sans lever les jambes)",
+      "duration": 16
+    },
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Respiration profonde, étirements en position allongée : dos, jambes, épaules",
+      "duration": 6
+    },
+    "notes": "Vous êtes sur la bonne voie. Évitez tout inconfort abdominal. Respirez avec fluidité."
+  },
+  {
+    "date": "2025-07-16",
+    "type": "entraînement",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "6 minutes de mouvements de bras (extensions, rotations) et montées de genoux douces sur place",
+      "duration": 6
+    },
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Respiration diafragmatique assise, activation douce du bassin et mobilisation articulaire des genoux et des hanches",
+      "duration": 6
+    },
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "3 tours : 10 squats doux avec ballon entre les genoux, 10 extensions de jambe assise sur une chaise, 10 élévations de hanches au sol avec un petit temps de pause",
+      "duration": 18
+    },
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Étirements doux en position allongée ou assise : dos, épaules, jambes. Respiration lente et profonde",
+      "duration": 6
+    },
+    "notes": "Conservez une amplitude confortable dans vos mouvements. Gardez la respiration fluide et le plancher pelvien actif mais détendu."
+  }
+]

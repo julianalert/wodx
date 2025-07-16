@@ -113,8 +113,8 @@ export default function Home() {
         <header className="w-full flex flex-col items-center">
           <img src="/wodx.svg" alt="Logo" className="h-16 w-16 mb-2" />
         </header>
-        <h1 className="text-3xl font-bold mb-1">WOD CrossFit</h1>
-        <p className="text-center text-lg text-gray-600 font-medium">Chaque jour, un nouveau WOD Crossfit.</p>
+        <h1 className="text-3xl font-bold mb-1">WOD</h1>
+        <p className="text-center text-lg text-gray-600 font-medium">Chaque jour, un nouveau WOD.</p>
         {!hasToday && (
           <button
             className="mb-2 px-4 py-2 rounded bg-blue-600 text-white disabled:opacity-50"

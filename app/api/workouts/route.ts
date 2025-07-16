@@ -1,39 +1,34 @@
 import { NextRequest, NextResponse } from "next/server";
-import { DailyWorkout } from "../../../types";
-import { promises as fs } from "fs";
-import path from "path";
+import { createClient } from '@supabase/supabase-js';
 
-const DATA_FILE = path.resolve(process.cwd(), "workouts_postpartum.json");
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
 
 export async function GET() {
-  try {
-    const data = await fs.readFile(DATA_FILE, "utf-8");
-    const workouts: DailyWorkout[] = JSON.parse(data);
-    return NextResponse.json(workouts);
-  } catch (err) {
-    // If file doesn't exist, return empty array
-    if ((err as NodeJS.ErrnoException).code === "ENOENT") {
-      return NextResponse.json([]);
-    }
-    return NextResponse.json({ error: "Failed to read workouts." }, { status: 500 });
+  const { data, error } = await supabase
+    .from('workouts')
+    .select('*')
+    .order('date', { ascending: true });
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
+  return NextResponse.json(data, { status: 200 });
 }
 
 export async function POST(req: NextRequest) {
   try {
-    const newWorkout: DailyWorkout = await req.json();
-    let workouts: DailyWorkout[] = [];
-    try {
-      const data = await fs.readFile(DATA_FILE, "utf-8");
-      workouts = JSON.parse(data);
-    } catch (err) {
-      // If file doesn't exist, start with empty array
-      if ((err as NodeJS.ErrnoException).code !== "ENOENT") throw err;
+    const newWorkout = await req.json();
+    const { data, error } = await supabase
+      .from('workouts')
+      .insert([newWorkout])
+      .select();
+    if (error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
     }
-    workouts.push(newWorkout);
-    await fs.writeFile(DATA_FILE, JSON.stringify(workouts, null, 2), "utf-8");
-    return NextResponse.json(newWorkout, { status: 201 });
+    return NextResponse.json(data[0], { status: 201 });
   } catch (err) {
-    return NextResponse.json({ error: "Failed to save workout." }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to save workout.' }, { status: 500 });
   }
 } 
