@@ -72,7 +72,7 @@ export default function Home() {
     return (
       <div className="font-sans flex flex-col items-center min-h-screen p-8 pb-20 gap-8 sm:p-20">
         <h1 className="text-3xl font-bold mb-4">WODX - Workout of the Day</h1>
-        <div>Loading workouts...</div>
+        <div>Chargement des entraînements...</div>
       </div>
     );
   }
@@ -81,13 +81,13 @@ export default function Home() {
     return (
       <div className="font-sans flex flex-col items-center min-h-screen p-8 pb-20 gap-8 sm:p-20">
         <h1 className="text-3xl font-bold mb-4">WODX - Workout of the Day</h1>
-        <div className="text-red-600">Error: {error}</div>
+        <div className="text-red-600">Erreur : {error}</div>
         <button
           className="mt-4 px-4 py-2 rounded bg-blue-600 text-white"
           onClick={handleGenerate}
           disabled={generating}
         >
-          {generating ? "Generating..." : "Generate Today's Workout"}
+          {generating ? "Génération en cours..." : "Générer le WOD d'aujourd'hui"}
         </button>
       </div>
     );
@@ -106,22 +106,22 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Workout of the day - WODX</title>
+        <title>WOD Crossfit - Programme d'entraînement - WODX</title>
       </Head>
       <div className="font-sans flex flex-col items-center min-h-screen p-4 pb-20 gap-4 sm:p-8">
         {/* Header with centered logo */}
         <header className="w-full flex flex-col items-center">
           <img src="/wodx.svg" alt="Logo" className="h-16 w-16 mb-2" />
         </header>
-        <h1 className="text-3xl font-bold mb-1">Workout of the Day</h1>
-        <p className="text-center text-lg text-gray-600 font-medium">Everyday, a new Crossfit workout.</p>
+        <h1 className="text-3xl font-bold mb-1">WOD CrossFit</h1>
+        <p className="text-center text-lg text-gray-600 font-medium">Chaque jour, un nouveau WOD Crossfit.</p>
         {!hasToday && (
           <button
             className="mb-2 px-4 py-2 rounded bg-blue-600 text-white disabled:opacity-50"
             onClick={handleGenerate}
             disabled={generating}
           >
-            {generating ? "Generating..." : "Generate Today's Workout"}
+            {generating ? "Génération en cours..." : "Générer le WOD d'aujourd'hui"}
           </button>
         )}
         {/* Add space between hero and cards */}
@@ -132,7 +132,7 @@ export default function Home() {
               <h2 className="text-xl font-semibold mb-2">{workout.date}</h2>
               <div className="mb-4">
                 <span className="inline-block px-2 py-1 rounded bg-blue-100 text-blue-800 text-xs font-medium">
-                  {workout.type === "workout" ? "Workout" : "Rest Day"}
+                  {workout.type === "workout" ? "Entraînement" : "Jour de repos"}
                 </span>
               </div>
               <div className="space-y-4">
@@ -143,7 +143,7 @@ export default function Home() {
               </div>
               {workout.notes && (
                 <div className="mt-6 p-3 bg-yellow-50 border-l-4 border-yellow-400 text-yellow-800 rounded">
-                  <strong>Notes:</strong> {workout.notes}
+                  <strong>Notes :</strong> {workout.notes}
                 </div>
               )}
             </div>
@@ -156,7 +156,7 @@ export default function Home() {
             onClick={() => setPage((p) => Math.max(p - 1, 0))}
             disabled={page === 0}
           >
-            Previous
+            Précédent
           </button>
           {Array.from({ length: totalPages }).map((_, i) => (
             <button
@@ -172,7 +172,7 @@ export default function Home() {
             onClick={() => setPage((p) => Math.min(p + 1, totalPages - 1))}
             disabled={page === totalPages - 1}
           >
-            Next
+            Suivant
           </button>
         </div>
       </div>
@@ -186,7 +186,7 @@ function Section({ section }: { section: DailyWorkout["warmup"] }) {
       <h3 className="text-lg font-semibold mb-1">{section.title}</h3>
       <p className="mb-1">{section.description}</p>
       {section.duration && (
-        <span className="text-xs text-gray-500">Duration: {section.duration} min</span>
+        <span className="text-xs text-gray-500">Durée : {section.duration} min</span>
       )}
     </div>
   );

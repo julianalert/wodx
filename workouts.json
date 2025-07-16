@@ -1,123 +1,123 @@
 [
   {
     "date": "2024-07-12",
-    "type": "rest",
+    "type": "repos",
     "warmup": {
-      "title": "Warm Up",
-      "description": "Rest day - light walk recommended"
+      "title": "Échauffement",
+      "description": "Jour de repos - marche légère recommandée"
     },
     "preWorkout": {
-      "title": "Pre Workout",
+      "title": "Pré-entraînement",
       "description": "-"
     },
     "mainWorkout": {
-      "title": "Main Workout",
+      "title": "Entraînement principal",
       "description": "-"
     },
     "cooldown": {
-      "title": "Cooldown",
-      "description": "Gentle stretching"
+      "title": "Retour au calme",
+      "description": "Étirements doux"
     },
-    "notes": "Recovery is important!"
+    "notes": "La récupération est importante !"
   },
   {
     "date": "2024-07-13",
-    "type": "workout",
+    "type": "entraînement",
     "warmup": {
-      "title": "Warm Up",
-      "description": "Row 1000m, dynamic stretching",
+      "title": "Échauffement",
+      "description": "Ramer 1000m, étirements dynamiques",
       "duration": 12
     },
     "preWorkout": {
-      "title": "Pre Workout",
-      "description": "Shoulder mobility, band pull-aparts",
+      "title": "Pré-entraînement",
+      "description": "Mobilité des épaules, élastiques, tirages",
       "duration": 8
     },
     "mainWorkout": {
-      "title": "Main Workout",
-      "description": "AMRAP 20 min: 5 pull-ups, 10 push-ups, 15 air squats",
+      "title": "Entraînement principal",
+      "description": "AMRAP 20 min : 5 tractions, 10 pompes, 15 squats aériens",
       "duration": 20
     },
     "cooldown": {
-      "title": "Cooldown",
-      "description": "Stretching, deep breathing",
+      "title": "Retour au calme",
+      "description": "Étirements, respiration profonde",
       "duration": 10
     },
-    "notes": "Pace yourself for the AMRAP."
+    "notes": "Gérez votre rythme pour l'AMRAP."
   },
   {
     "date": "2024-07-14",
-    "type": "workout",
+    "type": "entraînement",
     "warmup": {
-      "title": "Warm Up",
-      "description": "Dynamic stretching, 1,000m row",
+      "title": "Échauffement",
+      "description": "Étirements dynamiques, 1000m rameur",
       "duration": 10
     },
     "preWorkout": {
-      "title": "Pre Workout",
-      "description": "Complete as many meters as possible in 10 minutes of: Farmers carry",
+      "title": "Pré-entraînement",
+      "description": "Faites un maximum de mètres en 10 minutes de : Farmers carry (marche du fermier)",
       "duration": 10
     },
     "mainWorkout": {
-      "title": "Main Workout",
-      "description": "4 rounds for time: 10 push-ups, 15 squats, 20 sit-ups",
+      "title": "Entraînement principal",
+      "description": "4 tours pour le temps : 10 pompes, 15 squats, 20 abdos",
       "duration": 30
     },
     "cooldown": {
-      "title": "Cooldown",
-      "description": "Foam rolling, static stretching",
+      "title": "Retour au calme",
+      "description": "Foam rolling, étirements statiques",
       "duration": 10
     },
-    "notes": "Focus on form, not speed."
+    "notes": "Priorisez la technique, pas la vitesse."
   },
   {
     "date": "2025-07-15",
-    "type": "workout",
+    "type": "entraînement",
     "warmup": {
-      "title": "Warm Up",
-      "description": "5 rounds of 20 seconds jump rope, 40 seconds active rest. Followed by dynamic stretching for whole body",
+      "title": "Échauffement",
+      "description": "5 tours de 20 secondes corde à sauter, 40 secondes repos actif. Puis étirements dynamiques du corps entier",
       "duration": 15
     },
     "preWorkout": {
-      "title": "Pre Workout",
-      "description": "Kettlebell drills: 2 sets of 10 kettlebell swings, 10 kettlebell goblet squats",
+      "title": "Pré-entraînement",
+      "description": "Kettlebell : 2x10 swings, 10 goblet squats",
       "duration": 10
     },
     "mainWorkout": {
-      "title": "Main Workout",
-      "description": "5 Rounds for Time: 8 Kettlebell thrusters (each side), 15 kettlebell swings, 400m run",
+      "title": "Entraînement principal",
+      "description": "5 tours pour le temps : 8 thrusters kettlebell (chaque côté), 15 swings kettlebell, 400m course",
       "duration": 35
     },
     "cooldown": {
-      "title": "Cooldown",
-      "description": "10 minutes of yoga-inspired cool down stretches",
+      "title": "Retour au calme",
+      "description": "10 minutes d'étirements inspirés du yoga",
       "duration": 10
     },
-    "notes": "Hydrate well & focus on deep breathing during cooldown"
+    "notes": "Hydratez-vous bien & concentrez-vous sur la respiration lors du retour au calme."
   },
   {
     "date": "2025-07-16",
-    "type": "workout",
+    "type": "entraînement",
     "warmup": {
-      "title": "Warm Up",
-      "description": "5 minutes of jump rope, followed by light jogging and dynamic stretching for lower body",
+      "title": "Échauffement",
+      "description": "5 minutes de corde à sauter, puis footing léger et étirements dynamiques pour le bas du corps",
       "duration": 15
     },
     "preWorkout": {
-      "title": "Pre Workout",
-      "description": "2 sets of walking lunges and mobility drills to prep for main workout",
+      "title": "Pré-entraînement",
+      "description": "2 séries de fentes marchées et mobilité pour préparer l'entraînement principal",
       "duration": 10
     },
     "mainWorkout": {
-      "title": "Main Workout",
-      "description": "EMOM (Every minute on the minute) for 20 min: 5 box jumps and 5 push presses. Use a weight that is challenging but manageable",
+      "title": "Entraînement principal",
+      "description": "EMOM 20 min : 5 box jumps et 5 push presses. Utilisez une charge adaptée mais stimulante",
       "duration": 20
     },
     "cooldown": {
-      "title": "Cooldown",
-      "description": "Slow walk for 5 min, followed by static stretching especially for legs and shoulders",
+      "title": "Retour au calme",
+      "description": "Marche lente 5 min, puis étirements statiques surtout jambes et épaules",
       "duration": 15
     },
-    "notes": "Ensure good form especially on push presses to prevent injury"
+    "notes": "Veillez à la technique surtout sur les push presses pour éviter les blessures."
   }
 ]

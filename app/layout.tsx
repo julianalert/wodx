@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Workout of the day - WODX",
-  description: "Your daily workout generator",
+  title: "WOD Crossfit - Programme d'entrainement - WODX",
+  description: "Chaque jour, un nouveau WOD Crossfit. Programme d'entrainement complet.",
 };
 
 export default function RootLayout({

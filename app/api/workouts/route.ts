@@ -3,7 +3,7 @@ import { DailyWorkout } from "../../../types";
 import { promises as fs } from "fs";
 import path from "path";
 
-const DATA_FILE = path.resolve(process.cwd(), "workouts.json");
+const DATA_FILE = path.resolve(process.cwd(), "workouts_postpartum.json");
 
 export async function GET() {
   try {

@@ -10,19 +10,20 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Missing OpenAI API key." }, { status: 500 });
   }
 
-  const prompt = `Given the following workout history, generate a new daily workout for today. Each day must include: a warm up, a pre workout, a main workout, and a cooldown session. 
-The program must be logic based on previous workouts and rest days, so today's workout should be influenced by the previous days. 
-However, do NOT follow a predictable pattern. Be creative and surprising—introduce new movements, formats, or challenges. Avoid repeating the same structure or exercises as previous days. 
-If a rest day is needed, make it a rest day.. Workouts must be mostly inspired by crossfit workouts and exercises. 
-Return the result as a JSON object matching this TypeScript type:\n\n${JSON.stringify({
+  const prompt = `Tu es un coach sportif spécialisé dans la reprise post-partum après césarienne. Génère un nouveau WOD (Workout of the Day) pour une femme qui reprend le sport 2 mois après une césarienne. 
+Chaque séance doit inclure : un échauffement, un pré-entraînement (mobilité, respiration, plancher pelvien), un entraînement principal (mouvements fonctionnels, sans impact, sans crunchs ni exercices à risque pour la sangle abdominale), et un retour au calme (étirements, relaxation). 
+Le programme doit être progressif, sécuritaire, adapté à la condition post-partum, et varier les exercices. 
+Évite tout exercice à risque (pas de crunchs, pas de course rapide, pas de port de charge lourde, pas de travail intense des abdos). 
+Sois créatif mais toujours prudent. 
+Retourne le résultat au format JSON correspondant à ce type TypeScript :\n\n${JSON.stringify({
     date: "2024-06-08",
-    type: "workout",
-    warmup: { title: "Warm Up", description: "", duration: 0 },
-    preWorkout: { title: "Pre Workout", description: "", duration: 0 },
-    mainWorkout: { title: "Main Workout", description: "", duration: 0 },
-    cooldown: { title: "Cooldown", description: "", duration: 0 },
+    type: "entraînement",
+    warmup: { title: "Échauffement", description: "", duration: 0 },
+    preWorkout: { title: "Pré-entraînement", description: "", duration: 0 },
+    mainWorkout: { title: "Entraînement principal", description: "", duration: 0 },
+    cooldown: { title: "Retour au calme", description: "", duration: 0 },
     notes: ""
-  }, null, 2)}\n\nWorkout history:\n${JSON.stringify(history, null, 2)}\n\nToday's workout:`;
+  }, null, 2)}\n\nHistorique des entraînements :\n${JSON.stringify(history, null, 2)}\n\nWOD du jour :`;
 
   try {
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -34,11 +35,11 @@ Return the result as a JSON object matching this TypeScript type:\n\n${JSON.stri
       body: JSON.stringify({
         model: "gpt-4",
         messages: [
-          { role: "system", content: "You are an expert crossfit coach." },
+          { role: "system", content: "Tu es un coach expert de CrossFit et de la reprise post-partum après césarienne. Tu t'exprimes uniquement en français. Toutes tes réponses doivent être en français, claires, progressives, sécuritaires et adaptées à une femme venant d'accoucher par césarienne." },
           { role: "user", content: prompt },
         ],
-        temperature: 1.0, // or even up to 1.2 for more surprise
-        max_tokens: 1500, // or 2000
+        temperature: 1.0,
+        max_tokens: 1500,
       }),
     });
 
