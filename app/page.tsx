@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { DailyWorkout } from "../types";
+import Head from "next/head";
 
 function getTodayISO() {
   return new Date().toISOString().slice(0, 10);
@@ -8,10 +9,11 @@ function getTodayISO() {
 
 export default function Home() {
   const [workouts, setWorkouts] = useState<DailyWorkout[]>([]);
-  const [selectedIndex, setSelectedIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [generating, setGenerating] = useState(false);
+  const [page, setPage] = useState(0); // New: page state
+  const WORKOUTS_PER_PAGE = 3;
 
   useEffect(() => {
     async function fetchWorkouts() {
@@ -22,7 +24,7 @@ export default function Home() {
         if (!res.ok) throw new Error("Failed to fetch workouts");
         const data = await res.json();
         setWorkouts(data);
-        setSelectedIndex(data.length > 0 ? data.length - 1 : 0);
+        setPage(0); // Always start at the most recent page
       } catch (err) {
         setError((err as Error).message);
       } finally {
@@ -58,7 +60,7 @@ export default function Home() {
       const allRes = await fetch("/api/workouts");
       const allWorkouts = await allRes.json();
       setWorkouts(allWorkouts);
-      setSelectedIndex(allWorkouts.length - 1);
+      setPage(0); // Reset page to 0 after new workout
     } catch (err) {
       setError((err as Error).message);
     } finally {
@@ -94,56 +96,87 @@ export default function Home() {
   const today = getTodayISO();
   const hasToday = workouts.some(w => w.date === today);
 
-  const selectedWorkout = workouts[selectedIndex];
+  // Pagination logic
+  const totalPages = Math.ceil(workouts.length / WORKOUTS_PER_PAGE);
+  // Show most recent first: reverse the array
+  const reversedWorkouts = [...workouts].reverse();
+  const startIdx = page * WORKOUTS_PER_PAGE;
+  const pageWorkouts = reversedWorkouts.slice(startIdx, startIdx + WORKOUTS_PER_PAGE);
 
   return (
-    <div className="font-sans flex flex-col items-center min-h-screen p-8 pb-20 gap-8 sm:p-20">
-      <h1 className="text-3xl font-bold mb-4">WODX - Workout of the Day</h1>
-      <div className="mb-4 flex gap-2">
-        <button
-          className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 disabled:opacity-50"
-          onClick={() => setSelectedIndex((i) => Math.max(i - 1, 0))}
-          disabled={selectedIndex === 0}
-        >
-          Previous
-        </button>
-        <button
-          className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 disabled:opacity-50"
-          onClick={() => setSelectedIndex((i) => Math.min(i + 1, workouts.length - 1))}
-          disabled={selectedIndex === workouts.length - 1}
-        >
-          Next
-        </button>
-      </div>
-      {!hasToday && (
-        <button
-          className="mb-4 px-4 py-2 rounded bg-blue-600 text-white disabled:opacity-50"
-          onClick={handleGenerate}
-          disabled={generating}
-        >
-          {generating ? "Generating..." : "Generate Today's Workout"}
-        </button>
-      )}
-      <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 w-full max-w-xl">
-        <h2 className="text-xl font-semibold mb-2">{selectedWorkout.date}</h2>
-        <div className="mb-4">
-          <span className="inline-block px-2 py-1 rounded bg-blue-100 text-blue-800 text-xs font-medium">
-            {selectedWorkout.type === "workout" ? "Workout" : "Rest Day"}
-          </span>
-        </div>
-        <div className="space-y-4">
-          <Section section={selectedWorkout.warmup} />
-          <Section section={selectedWorkout.preWorkout} />
-          <Section section={selectedWorkout.mainWorkout} />
-          <Section section={selectedWorkout.cooldown} />
-        </div>
-        {selectedWorkout.notes && (
-          <div className="mt-6 p-3 bg-yellow-50 border-l-4 border-yellow-400 text-yellow-800 rounded">
-            <strong>Notes:</strong> {selectedWorkout.notes}
-          </div>
+    <>
+      <Head>
+        <title>Workout of the day - WODX</title>
+      </Head>
+      <div className="font-sans flex flex-col items-center min-h-screen p-4 pb-20 gap-4 sm:p-8">
+        {/* Header with centered logo */}
+        <header className="w-full flex flex-col items-center">
+          <img src="/wodx.svg" alt="Logo" className="h-16 w-16 mb-2" />
+        </header>
+        <h1 className="text-3xl font-bold mb-1">Workout of the Day</h1>
+        <p className="text-center text-lg text-gray-600 font-medium">Everyday, a new Crossfit workout.</p>
+        {!hasToday && (
+          <button
+            className="mb-2 px-4 py-2 rounded bg-blue-600 text-white disabled:opacity-50"
+            onClick={handleGenerate}
+            disabled={generating}
+          >
+            {generating ? "Generating..." : "Generate Today's Workout"}
+          </button>
         )}
+        {/* Add space between hero and cards */}
+        <div className="mt-3" />
+        <div className="flex flex-col gap-4 w-full max-w-xl">
+          {pageWorkouts.map((workout) => (
+            <div key={workout.date} className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6">
+              <h2 className="text-xl font-semibold mb-2">{workout.date}</h2>
+              <div className="mb-4">
+                <span className="inline-block px-2 py-1 rounded bg-blue-100 text-blue-800 text-xs font-medium">
+                  {workout.type === "workout" ? "Workout" : "Rest Day"}
+                </span>
+              </div>
+              <div className="space-y-4">
+                <Section section={workout.warmup} />
+                <Section section={workout.preWorkout} />
+                <Section section={workout.mainWorkout} />
+                <Section section={workout.cooldown} />
+              </div>
+              {workout.notes && (
+                <div className="mt-6 p-3 bg-yellow-50 border-l-4 border-yellow-400 text-yellow-800 rounded">
+                  <strong>Notes:</strong> {workout.notes}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+        {/* Pagination controls */}
+        <div className="flex gap-2 mt-6">
+          <button
+            className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 disabled:opacity-50"
+            onClick={() => setPage((p) => Math.max(p - 1, 0))}
+            disabled={page === 0}
+          >
+            Previous
+          </button>
+          {Array.from({ length: totalPages }).map((_, i) => (
+            <button
+              key={i}
+              className={`px-3 py-1 rounded ${i === page ? "bg-blue-600 text-white" : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"}`}
+              onClick={() => setPage(i)}
+            >
+              {i + 1}
+            </button>
+          ))}
+          <button
+            className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 disabled:opacity-50"
+            onClick={() => setPage((p) => Math.min(p + 1, totalPages - 1))}
+            disabled={page === totalPages - 1}
+          >
+            Next
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
