@@ -87,7 +87,7 @@ export default function Home() {
           onClick={handleGenerate}
           disabled={generating}
         >
-          {generating ? "Génération en cours..." : "Générer le WOD d'aujourd'hui"}
+          {generating ? "Génération en cours..." : "Générer le WOD d&apos;aujourd&apos;hui"}
         </button>
       </div>
     );
@@ -106,7 +106,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>WOD Crossfit - Programme d'entraînement - WODX</title>
+        <title>WOD Crossfit - Programme d&apos;entraînement - WODX</title>
       </Head>
       <div className="font-sans flex flex-col items-center min-h-screen p-4 pb-20 gap-4 sm:p-8">
         {/* Header with centered logo */}
@@ -121,7 +121,7 @@ export default function Home() {
             onClick={handleGenerate}
             disabled={generating}
           >
-            {generating ? "Génération en cours..." : "Générer le WOD d'aujourd'hui"}
+            {generating ? "Génération en cours..." : "Générer le WOD d&apos;aujourd&apos;hui"}
           </button>
         )}
         {/* Add space between hero and cards */}
@@ -132,7 +132,7 @@ export default function Home() {
               <h2 className="text-xl font-semibold mb-2">{workout.date}</h2>
               <div className="mb-4">
                 <span className="inline-block px-2 py-1 rounded bg-blue-100 text-blue-800 text-xs font-medium">
-                  {workout.type === "workout" ? "Entraînement" : "Jour de repos"}
+                  {workout.type === 'workout' ? 'Entraînement' : 'Jour de repos'}
                 </span>
               </div>
               <div className="space-y-4">
@@ -143,7 +143,7 @@ export default function Home() {
               </div>
               {workout.notes && (
                 <div className="mt-6 p-3 bg-yellow-50 border-l-4 border-yellow-400 text-yellow-800 rounded">
-                  <strong>Notes :</strong> {workout.notes}
+                  <strong>Notes&nbsp;:</strong> {workout.notes}
                 </div>
               )}
             </div>

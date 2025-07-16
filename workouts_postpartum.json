@@ -1,128 +1,153 @@
 [
-    {
-      "date": "2025-07-11",
-      "type": "entraînement",
-      "warmup": {
-        "title": "Échauffement",
-        "description": "5 minutes de marche douce ou de balancements contrôlés des bras et des jambes sur place",
-        "duration": 5
-      },
-      "preWorkout": {
-        "title": "Pré-entraînement",
-        "description": "Respiration diaphragmatique allongée, activation douce du plancher pelvien, rotations de chevilles et cercles de bras",
-        "duration": 5
-      },
-      "mainWorkout": {
-        "title": "Entraînement principal",
-        "description": "2 tours : 10 squats à amplitude réduite près d'une chaise, 10 élévations de bassin au sol, 10 bird-dogs alternés (contrôle du tronc)",
-        "duration": 12
-      },
-      "cooldown": {
-        "title": "Retour au calme",
-        "description": "Étirements doux : mollets, quadriceps, bras. Respiration lente et profonde en position allongée",
-        "duration": 5
-      },
-      "notes": "Bougez lentement, connectez-vous à votre respiration. Arrêtez si vous ressentez une pression abdominale."
+  {
+    "date": "2024-07-01",
+    "type": "workout",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "5 minutes de marche douce ou vélo d'appartement à faible intensité",
+      "duration": 5
     },
-    {
-      "date": "2025-07-12",
-      "type": "entraînement",
-      "warmup": {
-        "title": "Échauffement",
-        "description": "6 minutes de marche lente à modérée ou de pas de côté sur place",
-        "duration": 6
-      },
-      "preWorkout": {
-        "title": "Pré-entraînement",
-        "description": "Exercices de Kegel coordonnés à l’expiration, mobilisation douce des épaules et hanches",
-        "duration": 6
-      },
-      "mainWorkout": {
-        "title": "Entraînement principal",
-        "description": "3 tours : 8 step-ups bas sur une marche, 10 glute bridges avec bras étendus, 10 extensions de jambe couchée sur le côté",
-        "duration": 15
-      },
-      "cooldown": {
-        "title": "Retour au calme",
-        "description": "Étirements en position assise : dos, hanches, bras. Respiration guidée",
-        "duration": 6
-      },
-      "notes": "Respirez profondément pendant les mouvements. Pas de tension dans la sangle abdominale."
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Mobilité douce : cercles de bras, rotations de hanches, respiration diaphragmatique",
+      "duration": 5
     },
-    {
-      "date": "2025-07-13",
-      "type": "entraînement",
-      "warmup": {
-        "title": "Échauffement",
-        "description": "5 minutes de rotation douce du tronc assise, balancements des jambes et des bras",
-        "duration": 5
-      },
-      "preWorkout": {
-        "title": "Pré-entraînement",
-        "description": "Respiration abdominale + Kegel, étirements actifs doux des bras et jambes",
-        "duration": 5
-      },
-      "mainWorkout": {
-        "title": "Entraînement principal",
-        "description": "Circuit 3 tours : 10 demi-squats avec ballon entre les genoux, 10 bird-dogs lents avec pause de 2 sec, 10 élévations de talons debout (gainage postural)",
-        "duration": 14
-      },
-      "cooldown": {
-        "title": "Retour au calme",
-        "description": "Étirements doux au sol : bas du dos, nuque, jambes. Respiration lente",
-        "duration": 5
-      },
-      "notes": "Évitez de rentrer le ventre de façon forcée. Priorisez la stabilité et le confort."
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "3 tours : 10 squats au poids du corps, 10 élévations latérales de bras, 10 fentes statiques (5 par jambe)",
+      "duration": 15
     },
-    {
-      "date": "2025-07-14",
-      "type": "entraînement",
-      "warmup": {
-        "title": "Échauffement",
-        "description": "5 minutes de pas de côté, montées de genoux légères (petite amplitude), mobilisation articulaire",
-        "duration": 5
-      },
-      "preWorkout": {
-        "title": "Pré-entraînement",
-        "description": "Respiration contrôlée, activation du plancher pelvien, étirements actifs des hanches",
-        "duration": 5
-      },
-      "mainWorkout": {
-        "title": "Entraînement principal",
-        "description": "2 tours : 8 squats lents avec appui mural, 10 fentes arrière statiques (avec support si besoin), 10 relevés de jambe latéraux au sol",
-        "duration": 15
-      },
-      "cooldown": {
-        "title": "Retour au calme",
-        "description": "Étirements du psoas, des ischios et des épaules. Respiration abdominale allongée",
-        "duration": 5
-      },
-      "notes": "Gardez le bassin stable durant chaque mouvement. Faites les exercices près d’un support si nécessaire."
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Étirements doux : quadriceps, ischios, épaules, respiration profonde",
+      "duration": 5
     },
-    {
-      "date": "2025-07-15",
-      "type": "entraînement",
-      "warmup": {
-        "title": "Échauffement",
-        "description": "6 minutes de marche ou mouvements dansés doux sur place pour faire monter légèrement le rythme cardiaque",
-        "duration": 6
-      },
-      "preWorkout": {
-        "title": "Pré-entraînement",
-        "description": "Mobilité du dos avec cat-cow, respiration diaphragmatique + engagement pelvien",
-        "duration": 5
-      },
-      "mainWorkout": {
-        "title": "Entraînement principal",
-        "description": "3 tours : 12 assis-debout sur chaise, 10 ponts fessiers, 10 'dead bugs' bras seuls (sans lever les jambes)",
-        "duration": 16
-      },
-      "cooldown": {
-        "title": "Retour au calme",
-        "description": "Respiration profonde, étirements en position allongée : dos, jambes, épaules",
-        "duration": 6
-      },
-      "notes": "Vous êtes sur la bonne voie. Évitez tout inconfort abdominal. Respirez avec fluidité."
-    }
-  ]
+    "notes": "Restez à l'écoute de votre corps. Arrêtez en cas de douleur ou de gêne."
+  },
+  {
+    "date": "2024-07-03",
+    "type": "workout",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "5 minutes de marche ou de vélo à intensité modérée",
+      "duration": 5
+    },
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Respiration profonde, activation du plancher pelvien (exercices de Kegel)",
+      "duration": 5
+    },
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "4 tours : 8 squats sur chaise, 10 bird-dogs (5 par côté), 10 pompes contre un mur",
+      "duration": 18
+    },
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Étirements doux et relaxation, respiration abdominale",
+      "duration": 7
+    },
+    "notes": "Concentrez-vous sur la qualité du mouvement, pas la quantité."
+  },
+  {
+    "date": "2024-07-05",
+    "type": "workout",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "5 minutes de marche rapide ou de vélo à faible résistance",
+      "duration": 5
+    },
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Mobilité des hanches et des épaules, respiration contrôlée",
+      "duration": 5
+    },
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "3 tours : 12 step-ups sur une marche basse, 10 dead bugs, 10 squats sumo",
+      "duration": 15
+    },
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Étirements doux, relaxation, respiration profonde",
+      "duration": 5
+    },
+    "notes": "Adaptez la hauteur de la marche selon votre confort."
+  },
+  {
+    "date": "2024-07-07",
+    "type": "workout",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "6 minutes de marche ou de vélo à intensité douce",
+      "duration": 6
+    },
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Respiration diaphragmatique, mobilisation du dos (cat-cow)",
+      "duration": 5
+    },
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "AMRAP 12 min : 8 squats, 8 fentes arrière (4 par jambe), 8 élévations de bassin au sol",
+      "duration": 12
+    },
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Étirements doux, relaxation, respiration calme",
+      "duration": 5
+    },
+    "notes": "Ne forcez jamais sur la sangle abdominale."
+  },
+  {
+    "date": "2024-07-09",
+    "type": "workout",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "5 minutes de marche ou de vélo à intensité douce",
+      "duration": 5
+    },
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Activation du plancher pelvien, mobilité des chevilles et poignets",
+      "duration": 5
+    },
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "3 tours : 10 squats, 10 bird-dogs, 10 pompes inclinées sur un banc",
+      "duration": 15
+    },
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Étirements doux, relaxation, respiration profonde",
+      "duration": 5
+    },
+    "notes": "Hydratez-vous et arrêtez en cas de fatigue excessive."
+  },
+  {
+    "date": "2025-07-16",
+    "type": "workout",
+    "warmup": {
+      "title": "Échauffement",
+      "description": "10 minutes de vélo à intensité modérée",
+      "duration": 10
+    },
+    "preWorkout": {
+      "title": "Pré-entraînement",
+      "description": "Mobilité des épaules, des hanches et du dos, respiration contrôlée",
+      "duration": 5
+    },
+    "mainWorkout": {
+      "title": "Entraînement principal",
+      "description": "3 tours de 12 kettlebell swings, 10 box jumps et 8 burpees",
+      "duration": 20
+    },
+    "cooldown": {
+      "title": "Retour au calme",
+      "description": "Étirements doux, relaxation guidée, respiration profonde",
+      "duration": 10
+    },
+    "notes": "Prenez le temps de bien exécuter chaque mouvement. Hydratez-vous au fur et à mesure."
+  }
+]
   
