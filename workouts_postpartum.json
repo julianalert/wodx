@@ -123,31 +123,6 @@
       "duration": 5
     },
     "notes": "Hydratez-vous et arrêtez en cas de fatigue excessive."
-  },
-  {
-    "date": "2025-07-16",
-    "type": "workout",
-    "warmup": {
-      "title": "Échauffement",
-      "description": "10 minutes de vélo à intensité modérée",
-      "duration": 10
-    },
-    "preWorkout": {
-      "title": "Pré-entraînement",
-      "description": "Mobilité des épaules, des hanches et du dos, respiration contrôlée",
-      "duration": 5
-    },
-    "mainWorkout": {
-      "title": "Entraînement principal",
-      "description": "3 tours de 12 kettlebell swings, 10 box jumps et 8 burpees",
-      "duration": 20
-    },
-    "cooldown": {
-      "title": "Retour au calme",
-      "description": "Étirements doux, relaxation guidée, respiration profonde",
-      "duration": 10
-    },
-    "notes": "Prenez le temps de bien exécuter chaque mouvement. Hydratez-vous au fur et à mesure."
   }
 ]
   
